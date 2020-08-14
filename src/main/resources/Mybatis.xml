@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<!--核心配置文件-->
+<configuration>
+    <environments default="development">
+
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${dm.jdbc.driver.DmDriver}"/>
+                <property name="url" value="${jdbc:dm://127.0.0.1:5236/softpark}"/>
+                <property name="username" value="${SYSDBA}"/>
+                <property name="password" value="${asdfgh123456}"/>
+            </dataSource>
+        </environment>
+
+    </environments>
+
+</configuration>
