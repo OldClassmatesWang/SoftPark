@@ -32,6 +32,7 @@ import java.util.List;
 @RestController
 @Slf4j
 @RequestMapping("/column")
+//
 public class ColumnController extends BaseController<UserInfo> {
 
     @Autowired
